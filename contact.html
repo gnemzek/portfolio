@@ -10,7 +10,14 @@
 	</script>
 	<![endif]-->
 	<link href="css/portfolio.css" rel="stylesheet"> 
-	
+	<style>
+      #map_canvas {
+        height: 400px;
+        width: 600px;
+      }
+	  h4, p {
+	  color:black;}
+    </style>
 	
 </head>
 <body>
@@ -32,7 +39,7 @@
 <div class="row">
 <h2> Contact Me </h2>
 </div>
-<!--<form>
+
 	<div class="row">
 		<div class="six columns">
 			<label for="nameInput">Your name</label>
@@ -48,9 +55,58 @@
 		<textarea class="u-full-width" placeholder="Hi Geneva …" id="message"></textarea>
 		<input class="button-primary" type="submit" value="Submit">
 	</div>
-</form> -->
+
 <p>To get in touch with me, please send an email to <a href="mailto:gnemzek@gmail.com"> gnemzek@gmail.com </a> or leave a message at 701.412.7529. </p>
 <hr>
+<div id="map_canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.18"></script>
+    <script>
+      window.onload = loadMap;
+      function loadMap() {
+        var latLong = new google.maps.LatLng(45.015167, -93.095132);
+
+        var mapOptions = {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: latLong
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+              mapOptions);
+        homeLatLong = new google.maps.LatLng(45.015167, -93.095132);
+        var marker = new google.maps.Marker({
+          position: homeLatLong,
+          map: map,
+          title: "Where I Live"
+        });
+        var homeDescription = "<h4>Where I Live</h4>" +
+          "<p>Great location!</p>";
+        var infoPopup = new google.maps.InfoWindow({
+          content: homeDescription
+        });
+		
+		libLatLong = new google.maps.LatLng(44.986014, -93.269542);
+        var marker2 = new google.maps.Marker({
+          position: libLatLong,
+          map: map,
+          title: "Library"
+        });
+        var libDescription = "<h4>Library</h4>" +
+          "<p>Hennepin County Library</p>";
+        var infoPopup2 = new google.maps.InfoWindow({
+          content: libDescription
+        });
+		
+        google.maps.event.addListener(marker, "click", function() {
+          infoPopup.open(map,marker);
+        });
+		
+		 google.maps.event.addListener(marker2, "click", function() {
+          infoPopup2.open(map,marker2);
+        });
+      }
+
+    </script>
 <!--<div class="row">
 	<h3> On the Web  </h3>
 </div> -->
