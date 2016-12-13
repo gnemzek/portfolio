@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Geneva Nemzek </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- [if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/snv/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<link href="css/portfolio.css" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	
+		function removeAll() {
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').removeClass('html css js php mysql access responsive wp mc twitter');
+			} // end remove classes function
+			
+		$(document).ready(function() {
+			
+			$('#html').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').addClass('html');
+			}) //end html click
+			
+			$('#css').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').addClass('css');
+			}) //end css click
+			
+			$('#js').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs').addClass('js');
+			}) //end js click
+			
+			$('#php').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #courses').addClass('php');
+			}) //end php click
+			
+			$('#mysql').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#courses').addClass('mysql');
+			}) //end mysql click
+			
+			$('#access').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin').addClass('access');
+			}) //end accessbility click
+			
+			$('#responsive').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #adventure, #pccc').addClass('responsive');
+			}) //end responsive click
+			
+			$('#wp').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#adventure, #pccc').addClass('wp');
+			}) //end wp click
+			
+			$('#mc').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#adventure').addClass('mc');
+			}) //end mc click
+			
+			$('#twitter').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#colin').addClass('twitter');
+			}) //end twitter click
+			
+			
+		}); //end ready
+		
+		</script>
+	
+</head>
+<body>
+
+<main>
+<div class="container header">
+<h1> Geneva Nemzek, Web Developer </h1>
+
+
+	<div class="row">
+		<div class="nav twelve columns">
+		 <a href="index.html" class="button"> home  </a>
+			<a href="about.html" class="button button-primary"> about </a> 
+			<a href="projects.html" class="button"> projects </a> 
+			<a href="testimonials.html" class="button"> testimonials </a> 
+			<a href="contact.html" class="button"> contact </a> 
+		</div>
+	</div> <!-- end row -->		
+	</div> <!-- end container -->
+<div class="container">
+	<div class="row">
+		<div class="six columns">
+		
+			
+			 <h2> Story </h2>
+			 <img src="images/bio.jpg" class="floatleft">
+			 <p> My whole life I've always been interested in two things: technology and people. I graduated from Concordia College in 2014 with a degree in Sociology and started my Web Development degree at M|State in the fall of 2015. In between my time at Concordia and my time at M|State, I worked as a reference librarian, where I was able to see firsthand how technology can change lives. </p>
+
+			 <p>My dream is to sit at the intersection where my great passion meets the world's great need, and I can't wait to see where that takes me. I believe in changing the world, one bit of code at a time. </p>
+			 
+			 <a class="button button-primary" href="projects.html"> Projects </a>
+		</div>
+		<div class="six columns">
+			<h2> Education </h2>
+			<p> My education at Concordia College taught me a lot about people. I learned about social systems and oppression, and I also learned a lot about myself and the world around me. </p>
+			<p> When I was gearing up to graduate from Concordia, I started realizing my dream of becoming a web developer, so I learned what I could on my own for a couple of years before attending M-State's online Web Development program. </p>
+			<p> The M-State Web Development program took me more in depth with what I had already learned, and my development bookshelf has grown massively since enrolling. At M-State, I've taken 9 courses so far: Foundations of Web Development, Foundations of Web Design, HTML, CSS, JavaScript & jQuery, PHP & MySQL, UX Design, Multimedia, and Photoshop. Check out my courses page for a more indepth look at the classes I took. </p>
+			<a class="button button-primary" href="courses.html"> Courses </a> 
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="six columns">
+		
+			 <h2>Experience </h2>
+			 <h3> Online Communications Intern, Concordia College </h3>
+			 <p> I learned quite a bit at the Office of Communications and Marketing at Concordia during my 3 years there as a student. I started off learning about content writing and video editing, but soon I discovered web development and fell in love. With the college web developer as my mentor, I learned all about HTML, CSS, JavaScript/jQuery, different content management systems, different CSS frameworks, and how to create WordPress themes. This was my entry into the world of web development and got me started on my journey. </p>
+			 <h3> Library Associate I, Lake Agassiz Regional Library </h3>
+			 <p> Right after I graduded, I became a reference librarian. I learned a lot about how people use technology and how tecnhology can help improve the lives of others. While I was a librarian, I taught a lot of basic computers classes, but I also had the opportunity to create and teach HTML and CSS classes. Through this, I gained a deeper understanding of HTML and CSS both. </p>
+			 <a class="button button-primary" href="resumeUpdated.pdf" target="_blank">Resume </a>
+		</div>
+		<div class="six columns">
+		
+			<h2>Involvement</h2>
+			<img src="images/communityinvolvement.jpg" class="floatright">
+			<h3>Co-President, Straight and Gay Alliance at Concordia College </h3>
+			<p> As a co-president of the Straight and Gay Alliance (SAGA), I learned how to work as a team to get things done. My co-president and I co-led weekly meetings, put on weeks of events every semester, and helped to create the material that the Safe Space Committee on campus used to help faculty and staff become more aware of issues facing the lgbtq+ community. My involvement in SAGA was the beginning of my adult activism, and I left the experience having learned a ton. </p>
+			<h3> President of the Board, Fargo/Moorhad Pride Collective and Community Center </h3>
+			<p> My involvement at the Pride Collective and Community Center (PCCC) started out small - I was an intern that kept weekly office hours and helped out whoever walked in the door. Eventually I became a board member, and a little whlie after that, I was elected President. Throughout my time there, I helped moved the organization to a bigger space in a better location, I revamped the organization's website, and I built out the social media, adding Instagram, Twitter, and Tumblr to the mix. </p>
+			<h3> Committee Member, Moorhead Human Rights Commission </h3>
+			<p> As a committee member of the HRC in Moorhead, I attended monthly meetings at City Hall to discuss issues of human rights in the city of Moorhead. The commission itself focused on human rights and how to best assure that the rights of all people in Moorhead were being met. </p>
+		</div>
+</div> <!-- end main container -->
+</main>
+<div class="container">
+	<footer>
+	</footer>
+	</div> <!-- end container -->
+</body>	
+</html>

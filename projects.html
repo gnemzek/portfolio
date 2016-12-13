@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Geneva Nemzek </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- [if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/snv/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<link href="css/portfolio.css" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	
+		function removeAll() {
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').removeClass('html css js php mysql access responsive wp mc twitter');
+			} // end remove classes function
+			
+		$(document).ready(function() {
+			
+			$('#html').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').addClass('html');
+			}) //end html click
+			
+			$('#css').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs, #courses, #adventure, #pccc').addClass('css');
+			}) //end css click
+			
+			$('#js').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #madlibs').addClass('js');
+			}) //end js click
+			
+			$('#php').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #courses').addClass('php');
+			}) //end php click
+			
+			$('#mysql').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#courses').addClass('mysql');
+			}) //end mysql click
+			
+			$('#access').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin').addClass('access');
+			}) //end accessbility click
+			
+			$('#responsive').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#afoutayi, #colin, #adventure, #pccc').addClass('responsive');
+			}) //end responsive click
+			
+			$('#wp').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#adventure, #pccc').addClass('wp');
+			}) //end wp click
+			
+			$('#mc').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#adventure').addClass('mc');
+			}) //end mc click
+			
+			$('#twitter').click(function(evt) {
+				evt.preventDefault(); // prevents link from going to new page
+				removeAll(); // removes other classes
+				$('#colin').addClass('twitter');
+			}) //end twitter click
+			
+			
+		}); //end ready
+		
+		</script>
+	
+</head>
+<body>
+
+<main>
+<div class="container header">
+<h1> Geneva Nemzek, Web Developer </h1>
+
+
+	<div class="row">
+		<div class="nav twelve columns">
+		 <a href="index.html" class="button"> home  </a>
+			<a href="about.html" class="button"> about </a> 
+			<a href="projects.html" class="button button-primary"> projects </a> 
+			<a href="testimonials.html" class="button"> testimonials </a> 
+			<a href="contact.html" class="button"> contact </a> 
+		</div>
+	</div> <!-- end row -->		
+	</div> <!-- end container -->
+<div class="container">
+<div class="row">
+<div class ="eight offset-by-two columns">
+
+</div>
+</div>
+	<div class="row">
+		<div class="three columns sidebar">
+			<h2> Skills </h2>
+			<a href="skills.html" class="button" id="html"> HTML </a>
+			<a href="skills.html" class="button" id="css"> CSS </a> 
+			<a href="skills.html" class="button" id="js"> JavaScript/jQuery </a> 
+			<a href="skills.html" class="button" id="php"> PHP </a> 
+			<a href="skills.html" class="button" id="mysql"> MySQL </a> 
+			<a href="skills.html" class="button" id="access"> Asscessibilty </a> 
+			<a href="skils.html" class="button" id="responsive"> Responsive Design </a> 
+			<a href="skills.html" class="button" id="wp"> WordPress </a> 
+			<a href="skills.html" class="button" id="mc"> MailChimp </a> 
+			<a href="skills.html" class="button" id="twitter"> Twitter API </a> 
+		</div> <!-- end two columns -->
+		<div class="nine columns">
+		<h2> Projects </h2>
+		<p> In my quest to become a web developer, I've picked up a few skills that I've been able to showcase through the different projects I've worked on in the past few years.</p>
+			<figure>
+				<a href="afoutayi.html"><img src="images/afoutayi2thumb.jpg" id="afoutayi"> </a>
+				<figcaption> <span class="title"> Afoutayi </span> </figcaption>
+			</figure>
+			<figure>
+				<a href="madlibsproject.html"><img src="images/madlibsthumb.jpg" id="madlibs"></a>
+				<figcaption> <span class="title"> MadLibs </span> </figcaption>
+			</figure>
+			<figure>
+				<a href="adventure.html"><img src="images/adventurethumb.png" id="adventure"></a>
+				<figcaption> <span class="title"> Adventure Addict </span> </figcaption>
+			</figure>
+			<figure>
+				<a href="courses.html"><img src="images/coursesThumb.jpg" id="courses"></a>
+				<figcaption> <span class="title"> Courses Database </span> </figcaption>
+			</figure>
+			<figure>
+				<a href="pccc.html"><img src="images/pcccthumb.jpg"  id="pccc"></a>
+				<figcaption> <span class="title"> Pride Collective </span> </figcaption>
+			</figure><figure>
+				<a href="colin.html"><img src="images/pillars.jpg" id="colin"></a>
+				<figcaption> <span class="title"> Colin Sullivan </span> </figcaption>
+			</figure>
+			
+		</div>
+	</div> <!-- end row -->
+</div> <!-- end container -->
+</main>
+<div class="container">
+	<footer>
+	</footer>
+	</div> <!-- end container -->
+</body>	
+</html>

@@ -1,0 +1,23 @@
+This is the story of Geneva Nemzek, aka The [Adjective] Avenger. When Geneva was [number] years old, she fell into a vat of scalding hot [liquid], which gave her amazing super powers like [superpower 1], [superpower 2], and [superpower 3]. Geneva was an all around hero who thought no problem was too small to solve!
+
+One day, Geneva was flying high above [city], when she heard people crying for help nearby. She sped up and flew towards the source, landing softly in an office in a(n) [adjective] building. "The [currentprompt[0]] Avenger!" cried the office workers. "Thank goodness you're here! The Evil [adjective] [noun] was just here and said if we don't fix his website by tonight, he's going to kidnap all of our families! Our web developer is on vacation and we don't know what to do"
+
+"Oh that just won't do," Geneva said, ready to jump into action. "What does he need done?"
+
+"He made a really long list of demands," said [name], nearby copy editor. "He wants the colors scheme to have [color 1], [color 2], and color [3]. He insists on having [number larger than 3] sidebars. Even worse, he has a ton of content that all needs to be meticulously positioned, and we only have [number] hours until he comes back." [currentprompt[10]] wiped a single stray tear away, thinking of the beautiful dogs awaiting them at home. 
+
+"We got this!" Geneva said. "Teamwork makes a dream work, my friends. Get the creative team working on colors and how to work in all those sidebars. I'll start positioning content." Then, using superspeed and her expert knowledge of CSS, Geneva coded the website for The Evil [currentprompt[8]] [currentprompt[9]].
+
+Just as she hit 'enter' one final time, The Evil [currentprompt[8]] [currentprompt[9]] came crashing through the window, totally ingoring the open window just a few feet to his left. 
+
+"Oh it's you, [currentprompt[0]] Avenger", sneered The Evil [currentprompt[8]] [currentprompt[9]]. "Well it's too late to help these fools now! I checked my website on the way over and it looked exactly the same as it did this morning!"
+
+"Did you clear your cache?" Geneva asked, just trying to be helpful. The Evil [currentprompt[7]] [currentprompt[8]] roared loudly, realizing that he didn't. Unable to admit that outloud, he decided to just fight the [currentprompt[0]] Avenger instead.
+
+But, Geneva was ready! Aiming for his [body part], Geneva used her [currentprompt[3]]. The Evil [currentprompt[7]] [currentprompt[8]] dodged out of the way, but Geneva was quick with her [currentprompt[4]]. Soon, The Evil [currentprompt[7]] [currentprompt[8]] was on the ground. Using her [currentprompt[5]], Geneva made sure he wouldn't get back up any time soon. 
+
+"Your website is fixed, The Evil [currentprompt[7]] [currentprompt[8]]. Leave these people and their families alone."
+
+The Evil [currentprompt[7]] [currentprompt[8]] admitted defeat and while he flew away, he cleared his cache. Upon seeing his new website, a single tear slid down the side of his face. It was beautiful, and just what he imagined. 
+
+Geneva waved to her new friends, before flying away amid cheers and many thanks. Using her superpowers and her learned skills, Geneva fought evil and won. Just another day in the life of The [currentprompt[0]] Avenger!

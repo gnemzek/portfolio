@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Geneva Nemzek </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- [if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/snv/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<link href="css/portfolio.css" rel="stylesheet"> 
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<style>
+		.prompt {
+		  font-size: 1em;
+		}
+		button {
+		  margin: 40px;
+		  }
+		input {
+		  font-size: 24px;
+		  color: black;
+		  }
+		.fill {
+		  background: white;
+		  color: red;
+		  border-bottom: 2px black solid;
+		  font-family: 'Shadows Into Light';
+		  font-weight: bold;
+		  padding: 0 6px;
+		  margin: 4px;
+		  }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$('.container').on('keydown', 'input', function (e) {
+    var key = e.which;
+    if(key == 13) {
+        alert("enter");
+        $('button').click();
+        return false;
+    }
+});
+	</script>
+	
+</head>
+<body>
+<main>
+<div class="container header">
+<h1> Geneva Nemzek, Web Developer </h1>
+
+
+	<div class="row">
+		<div class="nav twelve columns">
+		 <a href="index.html" class="button"> home  </a>
+			<a href="about.html" class="button button-primary"> about </a> 
+			<a href="projects.html" class="button"> projects </a> 
+			<a href="testimonials.html" class="button"> testimonials </a> 
+			<a href="contact.html" class="button"> contact </a> 
+		</div>
+	</div> <!-- end row -->		
+	</div> <!-- end container -->
+<div class="container">
+<div class="row">
+	<div class="prompt"></div>
+	<button>Next</button>
+</div>
+<script>
+			// List of prompts for the user
+			var prompts = [
+				'Type an adjective', 
+				'Type a number',
+				'Type a liquid',
+				'Type a superpower',
+				'Type another superpower',
+				'Type another superpower',
+				'Type a city',
+				'Type an adjective',
+				'Type an adjective',
+				'Type an animal',
+				'Type a name',
+				'Type a color',
+				'Type another color',
+				'Type another color',
+				'Type a number larger than 3',
+				'Type a number',
+				'Type a body part',
+			   ];
+
+			var answers=[];
+			// Keep track of current prompt we're on
+			var currentPrompt = 0;
+
+			// A function that will call the next prompt
+			var nextPrompt = function() {
+			  //if there's no answer in the form
+			  if (currentPrompt != 0){
+				answers.push($('input').val());
+			  }
+				// if there is a next prompt
+				if (currentPrompt < prompts.length) {
+					// put first prompt in all html elements with class 
+					
+					$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+					$('input').focus(); // have the cursor in the input box already so the user doesn't need to click 
+					// move the next prompt into variable currentPrompt 
+					currentPrompt = currentPrompt + 1;
+				}
+				//or else if we're at the end of the array
+				else {
+					// put a new message into the html.
+					showFinal();
+				}
+			}
+
+			//puts user answers into HTML
+			var showFinal = function() {
+			  $('.prompt').html('This is the story of Geneva Nemzek , aka The <span class="fill">'+answers[0]+'</span> Avenger. When Geneva was <span class="fill">'+answers[1]+'</span> years old, she fell into a vat of scalding hot <span class="fill">'+answers[2]+'</span>, which gave her amazing superpowers like <span class="fill">'+answers[3]+'</span>, <span class="fill">'+answers[4]+'</span>, and <span class="fill">'+answers[5]+'</span>. Geneva was an all around hero who thought no problem was too small to solve! <br> <br> One day, Geneva was flying high above <span class="fill">'+answers[6]+'</span>, when she heard people crying for help nearby. She sped up and flew towards the source, landing softly in an office in a(n) <span class="fill">'+answers[7]+'</span> building. "The <span class="fill">'+answers[0]+'</span> Avenger!" cried the office worders. "Thank goodness you\'re here! The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> was just here and said if don\'t fix his website by tonight, he\'s doing to kidnap all of our families! Our web developer is on vacation and we don\'t know what to do." <br><br> "Oh that just won\'t do," Geneva said, ready to jump into action. "What does he need done?" <br> <br> "He made a really long list of demands," said <span class="fill">'+answers[10]+'</span>, a nearby cody editor. "He wants the color scheme to have <span class="fill">'+answers[11]+'</span>, <span class="fill">'+answers[12]+'</span>, and <span class="fill">'+answers[13]+'</span>. He insists on having <span class="fill">'+answers[14]+'</span> sidebars. Even worse, he has a ton of content that all needs to be meticulously positioned, and we only have <span class="fill">'+answers[15]+'</span> hours until he comes back! <span class="fill">'+answers[10]+'</span> wiped a single stray tear away, thinking of the beautiful dogs waiting at home. <br> <br> "We got this!" Geneva said. "Teamwork makes a dream work, my friends. Get the creative team working on colors and how to work in all those sidebars. I\'ll start positioning the content." Then, using superspeed and her expert knowledge of CSS, Geneva coded the website for The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span>. <br> <br> Just as she hit \'enter\' one final time, The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> came crashing through the window, totally ignoring the open window just a few feet to his left. <br> <br> "Oh, it\'s you, <span class="fill">'+answers[0]+'</span> Avenger,"  sneered The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span>. "Well, it\'s too late to help these fools now! I checked my website on the way over and it looked exactly the same as it did this morning!" <br> <br> "Did you clear your cache?" Geneva asked, trying to be helpful. The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> roared loudly, realizing that he hadn\'t cleared his cache. Unable to admit that outloud, he decided to just fight the <span class="fill">'+answers[0]+'</span> Avenger instead. <br> <br> But, Geneva was ready! Aiming for his <span class="fill">'+answers[16]+'</span>, Geneva used her <span class="fill">'+answers[3]+'</span>. The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> dodged out of the way, but Geneva was quick with her <span class="fill">'+answers[4]+'</span>. Soon, The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> was on the ground. Using her <span class="fill">'+answers[5]+'</span>, Geneva made sure he wouldn\'t get back up any time soon. <br> <br> "Your website is fixed, Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span>. Leave these people and their families alone." <br> <br> The Evil <span class="fill">'+answers[8]+'</span> <span class="fill">'+answers[9]+'</span> admitted defeat, and while he flew away, he cleared the chache on his phone\'s web browser. Upon seeing his new website, a single tear slid down the side of his face. It was beautiful, and just what he imagined. <br> <br> Geneva waved to her new friends, before flying away amid cheers and many thanks. Using her superpowers and her learned skills, Geneva fought evil and won. Just another day in the life of The <span class="fill">'+answers[0]+'</span> Avenger!');
+			  //and then hide the button
+			  $('button').hide();
+			}
+			// run nextPrompt function when button is clicked
+			$('button').click(function() {
+				nextPrompt();
+			});
+			
+			$('.prompt').keyup(function (e) {
+				var key = e.which;
+				if(key == 13)  // the enter key code
+					{
+						$('button').click();
+						return false;  
+					  }
+					}); 
+			// Show the first prompt as soon as js loads
+			nextPrompt();
+
+	</script>	
+		
+</div> <!-- end container -->
+</main>
+<div class="container">
+	<footer>
+	</footer>
+	</div> <!-- end container -->
+</body>	
+</html>
